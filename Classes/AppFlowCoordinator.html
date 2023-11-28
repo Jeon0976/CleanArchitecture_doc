@@ -661,9 +661,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other%20Global%20Variables.html#/s:13MoviePractice13dateFormatter33_D52418C7D9E90E84550F04777999B7F0LLSo06NSDateD0Cvp">dateFormatter</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Global%20Variables.html#/s:13MoviePractice12tabBarHeight14CoreFoundation7CGFloatVvp">tabBarHeight</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -746,6 +743,8 @@
               </div>
             <p>앱의 최초 화면 플로우를 정하는 클래스 입니다.</p>
 
+<p>시작할 화면 플로우를 childCoordinator에 저장 후 해당 플로우를 시작합니다.</p>
+
           </div>
         </section>
 
@@ -753,6 +752,32 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13MoviePractice18AppFlowCoordinatorC4typeAA0E4TypeOvp"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13MoviePractice18AppFlowCoordinatorC4typeAA0E4TypeOvp">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CoordinatorType.html">CoordinatorType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -886,32 +911,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13MoviePractice18AppFlowCoordinatorC4typeAA0E4TypeOvp"></a>
-                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13MoviePractice18AppFlowCoordinatorC4typeAA0E4TypeOvp">type</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/CoordinatorType.html">CoordinatorType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:13MoviePractice18AppFlowCoordinatorC14appDIContainer33_FF110C64692644AA11DDA1E3F0EA9B46LLAA0cG0Cvp"></a>
                     <a name="//apple_ref/swift/Property/appDIContainer" class="dashAnchor"></a>
                     <a class="token" href="#/s:13MoviePractice18AppFlowCoordinatorC14appDIContainer33_FF110C64692644AA11DDA1E3F0EA9B46LLAA0cG0Cvp">appDIContainer</a>
@@ -948,7 +947,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>로그인 분기 처리입니다.</p>
+
+<p>연산 프로퍼티(Computed Property)를 사용하였고, UserDefaults에 Bool 값을 저장 및 불러옵니다.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -974,7 +976,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>&lt;#Description#&gt;</p>
+                        <p>최초 Scene Delegate에서 초기화 시킬 init 입니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -1000,7 +1002,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>&lt;#navigationController description#&gt;</p>
+                                  <p>최초 navigationController를 주입합니다.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1012,7 +1014,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>&lt;#appDIContainer description#&gt;</p>
+                                  <p>networkService, 화면 Delegate를 생성하는 App DI Container를 주입합니다.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1035,7 +1037,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>조건에 맞는 flow를 실행하는 메서드 입니다.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -1051,9 +1054,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13MoviePractice18AppFlowCoordinatorC09showLoginD0yyF"></a>
+                    <a name="/s:13MoviePractice18AppFlowCoordinatorC09showLoginD033_FF110C64692644AA11DDA1E3F0EA9B46LLyyF"></a>
                     <a name="//apple_ref/swift/Method/showLoginFlow()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13MoviePractice18AppFlowCoordinatorC09showLoginD0yyF">showLoginFlow()</a>
+                    <a class="token" href="#/s:13MoviePractice18AppFlowCoordinatorC09showLoginD033_FF110C64692644AA11DDA1E3F0EA9B46LLyyF">showLoginFlow()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1061,13 +1064,23 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>login flow coordinator를 생성하는 메서드 입니다.</p>
+
+<ul>
+<li>login DI Conatiner를 생성 후 해당 DI Container에서 LoginFlowCoordinator를 생성해서, 해당 FlowCoordinator를 childCoordinators 배열에 append해줍니다.</li>
+<li>login flow coordinator의 finishDelegate를 CoordinatorFinishDelegate protocol를 채택한 App DI Container으로 주입해서 DIP을 준수합니다.
+
+<ul>
+<li>해당 Protocol은 login flow coordinator가 삭제될 때 알려주기 위함 입니다.</li>
+</ul></li>
+</ul>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showLoginFlow</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">showLoginFlow</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -1077,9 +1090,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13MoviePractice18AppFlowCoordinatorC7showTabyyF"></a>
+                    <a name="/s:13MoviePractice18AppFlowCoordinatorC7showTab33_FF110C64692644AA11DDA1E3F0EA9B46LLyyF"></a>
                     <a name="//apple_ref/swift/Method/showTab()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13MoviePractice18AppFlowCoordinatorC7showTabyyF">showTab()</a>
+                    <a class="token" href="#/s:13MoviePractice18AppFlowCoordinatorC7showTab33_FF110C64692644AA11DDA1E3F0EA9B46LLyyF">showTab()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1087,13 +1100,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Tabbar Flow Coordinator를 생성하는 메서드 입니다.</p>
+
+<ul>
+<li>TabBar Flow Coordinator와 각 화면에 대한 DI Container, FlowCoordinator를 생성 합니다.</li>
+<li>이때 각 화면 flow coordinator는 tabBarFlowCoordinator <code>setupTabs</code>메서드를 활용해서 주입해주고, tabBarFlowCoordinator를 childCoordinators에 append 해줍니다.</li>
+</ul>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showTab</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">showTab</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
